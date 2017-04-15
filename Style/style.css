@@ -1,0 +1,265 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+header {
+margin: 0 auto;
+background-image: url(../img/background.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+height: 70vh;
+background-attachment: fixed;
+position: relative;
+}
+
+header:before {
+	content: '';
+	position: absolute;
+	background-color: black;
+	width: 100%;
+	height: 100%;
+	opacity: 0.5;
+}
+
+header a {
+	position: absolute;
+	text-decoration: none;
+	color: white;
+	font-size: 30px;
+	width: 100%;
+	top: 50%;
+	text-align: center;
+	transform: translateY(-50%);
+}
+
+
+nav {
+	margin: 0 auto;
+background-color: rgb(161,66,53);
+
+}
+
+nav ul {
+	list-style-type: none;
+	display: flex;
+justify-content: center;
+
+}
+
+nav ul li {
+	margin: 15px 10px;
+	
+}
+
+nav ul li a {
+	position: relative;
+	color: white;
+	text-decoration: none;
+
+}
+nav ul li a:after {
+	content: '';
+	position: absolute;
+	height: 2px;
+	width: 100%;
+	top: 19px;
+	left: 0px;
+	background-color: white;
+	transform: scaleX(0);
+	transition: 0.2s linear;
+}
+
+nav ul li a:hover::after {
+	transform: scaleX(1);
+ 	transition: 0.2s linear;
+}
+
+
+main {
+	width: 70vw;
+	margin: 0 auto;
+}
+
+main h2 {
+	margin: 30px 0;
+	position: relative;
+}
+
+main h2:after {
+	content: '';
+	position: absolute;
+	left: 0px;
+	bottom: -10px;
+	width: 100%;
+	height:5px;
+	background-color: rgb(161,66,53);
+}
+
+main article {
+	display: flex;
+}
+
+main article section {
+	width: 50%;
+}
+
+main article section img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	
+}
+
+.wildBirds {
+	color: white;
+	position: absolute;
+	font-size: 30px;
+	top: 50%;	
+	display: block;
+	width: 100%;
+	text-align: center;
+	transform: translateY(-50%);
+}
+
+.img {
+	position: relative;
+	overflow: hidden;
+}
+
+main article .img:before {
+	content: '';
+	position: absolute;
+	background-color: rgba(0,0,0,0.5);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	
+}
+
+main article section p {
+	padding-left: 30px;
+}
+footer {
+	background-color: black;
+	
+}
+.mediaNav {
+	display: none;
+	
+}
+
+footer {
+	background: linear-gradient(to top, rgb(0,0,0), rgb(5,0,41)) 
+}
+
+.footer {
+	list-style-type: none;
+	display: flex;
+	color: white;
+	justify-content: center;
+}
+
+
+.footer li {
+	border-right: 1px solid white;
+	padding: 10px;
+}
+
+
+@media handheld, (max-width: 610px) {
+	
+header {
+height: 40vh;
+background-attachment: local;
+}
+
+
+
+header a {
+	
+	font-size: 20px;
+	width: 100%;
+	top: 50%;
+	text-align: center;
+	transform: translateY(-50%);
+}
+
+
+
+
+
+	nav {
+		display: none;
+	}
+
+.mediaNav {
+	
+	display: flex;
+	justify-content: center;
+
+	background-color: rgb(161,66,53);
+	margin: 0 auto;
+	width: 100%;
+	
+
+}
+.mediaNav ul {
+	width: 100%;
+}
+
+.mArticle {
+	margin: 5px auto;
+	display: flex;
+	justify-content: center;
+	font-size: 30px;
+	color: white;
+
+}
+
+.items {
+	width: 100%;
+	text-align: center;
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	font-size: 30px;
+	background-color: rgb(255,174,186);
+}
+
+
+main {
+	width: 100%;
+	margin: 0 auto;
+}
+
+main h2 {
+	margin: 30px 0;
+	position: relative;
+}
+
+
+
+main article {
+	
+	flex-direction: column;
+}
+
+main article section {
+	width: 100%;
+}
+
+main article section img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	
+}
+
+main article section p {
+	padding-top: 10px;
+	padding-left: 5px;
+}
+
+}
