@@ -168,7 +168,7 @@ footer {
 }
 
 
-@media handheld, (max-width: 610px) {
+@media handheld, (max-width: 850px) {
 	
 header {
 height: 40vh;
